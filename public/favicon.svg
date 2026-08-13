@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Deep Indigo -> Royal Purple Gradient -->
+    <linearGradient id="favMainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3730A3" />
+      <stop offset="50%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <!-- Trust Blue -> Subtle Teal Arc Gradient -->
+    <linearGradient id="favArcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="60%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0D9488" />
+    </linearGradient>
+
+    <!-- Accent Teal -->
+    <linearGradient id="favTealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Main Stem of the P -->
+  <path
+    d="M 18 16 C 24 16, 28 20, 28 26 L 28 82 C 28 88, 22 92, 18 92 C 14 92, 8 88, 8 82 L 8 26 C 8 20, 12 16, 18 16 Z"
+    fill="url(#favMainGrad)"
+  />
+
+  <!-- Protective Outer Loop Arc of the P -->
+  <path
+    d="M 22 16 C 50 16, 92 20, 92 48 C 92 72, 58 74, 38 68 C 32 66, 30 58, 36 56 C 42 54, 78 60, 78 48 C 78 32, 48 28, 22 28 Z"
+    fill="url(#favArcGrad)"
+  />
+
+  <!-- Inner Protective Accent Arc -->
+  <path
+    d="M 30 22 C 54 22, 84 26, 84 48 C 84 62, 62 64, 48 60"
+    stroke="url(#favTealGrad)"
+    stroke-width="3.5"
+    stroke-linecap="round"
+  />
+
+  <!-- Abstract Community Figures (3 Citizens standing in solidarity) -->
+  <!-- Center Figure -->
+  <circle cx="48" cy="38" r="6" fill="#1E1B4B" />
+  <path
+    d="M 40 82 C 40 58, 43 47, 48 47 C 53 47, 56 58, 56 82 Z"
+    fill="#1E293B"
+  />
+
+  <!-- Right Figure -->
+  <circle cx="64" cy="43" r="5" fill="#2563EB" />
+  <path
+    d="M 58 82 C 58 63, 60 52, 64 52 C 68 52, 70 63, 70 82 Z"
+    fill="#2563EB"
+  />
+
+  <!-- Left Figure -->
+  <circle cx="34" cy="46" r="4.5" fill="#0D9488" />
+  <path
+    d="M 29 82 C 29 65, 31 56, 34 56 C 37 56, 39 65, 39 82 Z"
+    fill="#0D9488"
+  />
+</svg>

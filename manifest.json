@@ -1,0 +1,22 @@
+{
+  "short_name": "Parwah Hai Teri",
+  "name": "Parwah Hai Teri - Citizen Help & Community Platform",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?w=192&auto=format&fit=crop&q=80",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?w=512&auto=format&fit=crop&q=80",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "display": "standalone",
+  "orientation": "portrait",
+  "description": "Citizen help and community safety platform for India."
+}

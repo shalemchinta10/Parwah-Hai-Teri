@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-indigo: #3730a3;
+    --color-navy-dark: #0f172a;
+    --color-emerald-accent: #059669;
+    --color-card-border: rgba(226, 232, 240, 0.9);
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Theme overrides */
+  body.theme-teal {
+    background-color: #f0fdfa;
+    color: #0f172a;
+  }
+
+  body.theme-indigo {
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  body.theme-midnight {
+    background-color: #090d16;
+    color: #f1f5f9;
+  }
+
+  body.theme-emerald {
+    background-color: #f0fdf4;
+    color: #064e3b;
+  }
+
+  body.theme-rose {
+    background-color: #fff1f2;
+    color: #881337;
+  }
+
+  /* Theme Teal Overrides */
+  body.theme-teal .bg-indigo-600 {
+    background-color: #0d9488 !important;
+  }
+  body.theme-teal .hover\:bg-indigo-700:hover,
+  body.theme-teal .hover\:bg-indigo-500:hover {
+    background-color: #0f766e !important;
+  }
+  body.theme-teal .text-indigo-600,
+  body.theme-teal .text-indigo-700 {
+    color: #0d9488 !important;
+  }
+  body.theme-teal .text-indigo-900,
+  body.theme-teal .text-indigo-950 {
+    color: #134e4a !important;
+  }
+  body.theme-teal .bg-indigo-50 {
+    background-color: #ccfbf1 !important;
+  }
+  body.theme-teal .bg-indigo-100 {
+    background-color: #99f6e4 !important;
+  }
+  body.theme-teal .border-indigo-200,
+  body.theme-teal .border-indigo-100 {
+    border-color: #99f6e4 !important;
+  }
+
+  /* Theme Midnight Dark Overrides */
+  body.theme-midnight .bg-white {
+    background-color: #131c2e !important;
+    color: #f8fafc !important;
+    border-color: #2a3854 !important;
+  }
+
+  body.theme-midnight .bg-slate-50,
+  body.theme-midnight .bg-slate-100 {
+    background-color: #0d1526 !important;
+    color: #e2e8f0 !important;
+  }
+
+  body.theme-midnight .text-slate-900,
+  body.theme-midnight .text-slate-800 {
+    color: #f8fafc !important;
+  }
+
+  body.theme-midnight .text-slate-700,
+  body.theme-midnight .text-slate-600 {
+    color: #cbd5e1 !important;
+  }
+
+  body.theme-midnight .text-slate-500,
+  body.theme-midnight .text-slate-400 {
+    color: #94a3b8 !important;
+  }
+
+  body.theme-midnight .border-slate-200,
+  body.theme-midnight .border-slate-100 {
+    border-color: #2a3854 !important;
+  }
+
+  /* Theme Emerald Overrides */
+  body.theme-emerald .bg-white {
+    background-color: #ffffff !important;
+  }
+  body.theme-emerald .bg-indigo-600 {
+    background-color: #059669 !important;
+  }
+  body.theme-emerald .hover\:bg-indigo-700:hover,
+  body.theme-emerald .hover\:bg-indigo-500:hover {
+    background-color: #047857 !important;
+  }
+  body.theme-emerald .text-indigo-600,
+  body.theme-emerald .text-indigo-700 {
+    color: #059669 !important;
+  }
+  body.theme-emerald .bg-indigo-50 {
+    background-color: #d1fae5 !important;
+  }
+  body.theme-emerald .border-indigo-200 {
+    border-color: #a7f3d0 !important;
+  }
+
+  /* Theme Rose Overrides */
+  body.theme-rose .bg-indigo-600 {
+    background-color: #e11d48 !important;
+  }
+  body.theme-rose .hover\:bg-indigo-700:hover,
+  body.theme-rose .hover\:bg-indigo-500:hover {
+    background-color: #be123c !important;
+  }
+  body.theme-rose .text-indigo-600,
+  body.theme-rose .text-indigo-700 {
+    color: #e11d48 !important;
+  }
+  body.theme-rose .bg-indigo-50 {
+    background-color: #ffe4e6 !important;
+  }
+  body.theme-rose .border-indigo-200 {
+    border-color: #fecdd3 !important;
+  }
+}
+
+.font-handwritten {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Custom refined scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Elevation & Depth Utilities */
+.parwah-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.parwah-card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+}
+
+.parwah-glass-dark {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 27, 75, 0.96) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes gentlePulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.45);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes gentlePulseEmerald {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.45);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(5, 150, 105, 0);
+    transform: scale(1.02);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-gentle-pulse {
+  animation: gentlePulse 3s infinite ease-in-out;
+}
+
+.animate-gentle-pulse-emerald {
+  animation: gentlePulseEmerald 3s infinite ease-in-out;
+}
